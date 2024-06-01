@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color:brown;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .receipt {
+            border-top: 2px dashed #ccc;
+            padding-top: 20px;
+        }
+
+        .receipt-item {
+            margin-bottom: 10px;
+        }
+
+        .receipt-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .receipt-item span {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Receipt</h2>
+        </div>
+        <div class="receipt">
+            <div class="receipt-item">
+                <span>Item:</span>
+                <span>T-Shirt</span>
+            </div>
+            <div class="receipt-item">
+                <span>Quantity:</span>
+                <span>2</span>
+            </div>
+            <div class="receipt-item">
+                <span>Price:</span>
+                <span>$20.00</span>
+            </div>
+            <div class="receipt-item">
+                <span>Total:</span>
+                <span>$40.00</span>
+            </div>
+        </div>
+        <div class="total">
+            Total Amount: $40.00
+        </div>
+    </div>
+</body>
+</html>
